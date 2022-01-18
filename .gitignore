@@ -1,3 +1,7 @@
+# VS studio
+.vs
+x64/
+
 # Prerequisites
 *.d
 
