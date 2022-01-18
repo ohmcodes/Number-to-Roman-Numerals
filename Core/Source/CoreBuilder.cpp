@@ -13,27 +13,37 @@ auto main(int argc, char* argv[]) -> int
 	// Create a function that given a specific number return the correct Roman numeral
 	// Sample input: 52
 	// Sample output: LII
+
+	cout << "Maximum number allowed: 1 to 3999 \n";
+	cout << "Type: negative numbers (-1) to quit. \n";
 	while (true)
 	{
 		cout << "Enter a Number: ";
 		cin >> inputNumber;
-		if (inputNumber <= 0)
+		if (inputNumber < 0)
 		{
-			cout << "Invalid input. Please try again.\n";
-
-			//thanks to stackoverflow.
-			cin.clear();
-			cin.ignore(numeric_limits<int>::max(), '\n');
+			break;
 		}
 		else
 		{
-			if (inputNumber <= 3999)
+			if (inputNumber <= 0)
 			{
-				ResolvingRomanNumeral(inputNumber);
+				cout << "Invalid input. Please try again.\n";
+
+				//thanks to stackoverflow.
+				cin.clear();
+				cin.ignore(numeric_limits<int>::max(), '\n');
 			}
 			else
 			{
-				cout << "You've reached the maximum number. Please try again.\n";
+				if (inputNumber <= 3999)
+				{
+					ResolvingRomanNumeral(inputNumber);
+				}
+				else
+				{
+					cout << "You've reached the maximum number. Please try again.\n";
+				}
 			}
 		}
 	}
