@@ -1,4 +1,0 @@
-﻿  pch.cpp
-  CoreBuilder.cpp
-C:\Users\ohmco\Desktop\Number-to-Roman-Numerals\Core\Source\CoreBuilder.cpp(126,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Core.vcxproj -> C:\Users\ohmco\Desktop\Number-to-Roman-Numerals\x64\Debug\Core.exe
